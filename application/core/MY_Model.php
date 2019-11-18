@@ -16,6 +16,21 @@ class MY_Model extends CI_Model
             );
         }
     }
+
+    // validation input function, rules: dideklarasikan dalam masing-masing model
+    public function validate()
+    {
+        $this->load->library('form_validation');
+        $this->form_validation->set_error_delimeters(
+            '<small class="form-text text-danger">', '</small>'
+        );
+        $validationRules = $this->getValidatoinRules();
+
+        $this->form_validation->set_rules($validationRules);
+
+        return $this->form_validation->run();
+    }
+
 }
 
 /* End of file MY_Model.php */
