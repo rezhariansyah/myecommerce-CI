@@ -53,7 +53,7 @@ class Register_model extends MY_Model
         return $validationRules;
     }
 
-    public function run()
+    public function run($input)
     {
         $data = [
             'name'      => $input->name,
@@ -75,7 +75,6 @@ class Register_model extends MY_Model
         $this->session->set_userdata($sess_data);
         return true;
     }
-
 }
 
 /* End of file Register_model.php */
