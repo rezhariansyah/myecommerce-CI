@@ -83,6 +83,22 @@ class MY_Model extends CI_Model
         return $this->db->count_all_result($this->table);
     }
 
+    public function create($data)
+    {
+        $this->db->insert($this->table, $data);
+        return $this->db->insert_id();
+    }
+
+    public function update($data)
+    {
+        return $this->db->update($this->table, $data);
+    }
+
+    public function delete()
+    {
+        $this->db->delete($this->table);
+        return $this->db->affected_rows();
+    }
 }
 
 /* End of file MY_Model.php */
