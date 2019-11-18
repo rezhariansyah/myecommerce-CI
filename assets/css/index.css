@@ -1,0 +1,50 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* navbar */
+.logo {
+    width: 50px;
+}
+/* navbar end */
+
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+@media (max-width: 480px) {
+    .hide {
+      display: none;
+    }
+}
+
+.card-login {
+    border-radius: 20px;
+}
+
+.card-register {
+    border-radius: 20px;
+}
+
+.category a {
+    text-decoration: blink;
+    color: #505457;
+}
+
+.image-card {
+    border-radius: 20px 20px 0px 0px;
+}
+
