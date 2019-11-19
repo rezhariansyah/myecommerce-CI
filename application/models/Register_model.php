@@ -22,17 +22,12 @@ class Register_model extends MY_Model
         $validationRules = [
             [
                 'field'     => 'name',
-                'label'     => 'Nama',
+                'label'     => 'Name',
                 'rules'     => 'trim|required',
             ],
             [
                 'field'     => 'email',
-                'label'     => 'E-mail',
-                'rules'     => 'trim|required',
-            ],
-            [
-                'field'     => 'name',
-                'label'     => 'Nama',
+                'label'     => 'E-Mail',
                 'rules'     => 'trim|required|valid_email|is_unique[user.email]',
                 'errors'    => [
                     'is_unique' => 'This %s already exists.'
